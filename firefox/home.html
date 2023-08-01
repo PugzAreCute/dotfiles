@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <style>
+            @font-face {
+                font-family: Orbitron;
+                src: url(Orbitron.ttf);
+            }
+            body{
+                background-color: #110B11;
+                font-family: Orbitron, monospace;
+                color: #96E6B3;
+            }
+            #time{
+                font-size: 25vh;
+                margin-bottom: 0px;
+            }
+            .fb{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .website{
+                width:80px;
+                filter: brightness(0) saturate(100%) invert(93%) sepia(14%) saturate(979%) hue-rotate(74deg) brightness(95%) contrast(89%);
+            }
+            .website_name{
+                margin: 0px;
+            }
+            .fb_vert{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                font-family: Orbitron, monospace;
+                color: #96E6B3;
+            }
+            .link{
+                border-radius: 10px;
+                padding: 10px;
+                border: 2px dashed whitesmoke;
+                background-color: #221e22;
+                margin-left: 10px;
+            }
+            #search{
+                width:75vh;
+                margin: 0;
+                height: 48px;
+                background-color: #221e22;
+                color: white;
+                border: none;
+                font-size: larger;
+                font-family: Orbitron, monospace;
+                border-radius: 10px;
+
+            }
+            #search:focus{
+                outline: 0;
+            }
+            #search_button{
+                border-left: 2px dashed whitesmoke;
+                filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(306deg) brightness(103%) contrast(101%);
+                padding: none;
+                margin:0;
+
+            }
+            #sbox{
+                border: 2px dashed whitesmoke;
+                border-radius: 10px;
+                background-color: #221e22;
+                margin-bottom: 10px;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body onload="upd8()">
+        <div class="fb_vert">
+        <h1 id="time">00:00</h1>
+        <div class="fb"  id="sbox">
+        <input autofocus type="search" name="search" id="search">
+        <img id="search_button" src="search.svg" onclick="search()">
+        </div>
+        <div class="fb">
+            <a href="https://youtube.com" class="fb_vert link">
+            <img src="play.svg" class="website">
+            
+            <h4 class="website_name">YouTube</h1>
+            </a>
+            <a href="https://github.com" class="fb_vert link">
+                <img src="github-mark.svg" class="website">
+                <h4 class="website_name">GitHub</h1>
+                </a>
+        </div>
+        </div>
+        <script>
+            document.getElementById("search").addEventListener("keydown" ,(event) => {
+                if (event.keyCode == 13) search()
+            })
+            function search(){
+                window.location.href="https://google.com/search?q="+document.getElementById("search").value
+            }
+            setInterval(() => {
+               upd8()
+            }, 5000);
+            function upd8(){
+                let date = new Date()
+                document.getElementById("time").innerHTML=(date.getHours()<13?date.getHours():date.getHours()-12)+":"+(date.getMinutes()<10?'0':'') + date.getMinutes()
+            }
+        </script>
+    </body>
+</html>
