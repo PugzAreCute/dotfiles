@@ -1,0 +1,125 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-9, address 0x71",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-9, address 0x73",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ASRock Polychrome USB Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw0",
+                    "name": "ASRock X670E Pro RS",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ASRock",
+                    "version": "",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ASRock Polychrome USB Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw0",
+                    "name": "ASRock X670E Pro RS",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ASRock",
+                    "version": "",
+                    "zone_idx": 1
+                },
+                {
+                    "description": "ASRock Polychrome USB Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw0",
+                    "name": "ASRock X670E Pro RS",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ASRock",
+                    "version": "",
+                    "zone_idx": 2
+                },
+                {
+                    "description": "ASRock Polychrome USB Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw0",
+                    "name": "ASRock X670E Pro RS",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ASRock",
+                    "version": "",
+                    "zone_idx": 3
+                },
+                {
+                    "description": "ASRock Polychrome USB Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw0",
+                    "name": "ASRock X670E Pro RS",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ASRock",
+                    "version": "",
+                    "zone_idx": 4
+                }
+            ],
+            "CustomName": "",
+            "CustomSettings": {
+                "colors": [
+                    13529599,
+                    16738233,
+                    16698625,
+                    10616581,
+                    9894911,
+                    13529599
+                ],
+                "direction": 1,
+                "height": 50,
+                "spread": 100,
+                "width": 50
+            },
+            "EffectClassName": "CustomGradientWave",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 20,
+            "Temperature": 0,
+            "Tint": 0
+        }
+    ],
+    "version": 2
+}
