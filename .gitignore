@@ -3,3 +3,4 @@
 *.png
 *._*
 *.zip
+!images/**/*.png
